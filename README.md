@@ -1,4 +1,4 @@
-# SM2RAIN_Matlab
+# SM2RAIN (Matlab code)
 Matlab Implementation of SM2RAIN code
 
 Four different versions:
