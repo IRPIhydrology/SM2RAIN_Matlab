@@ -8,7 +8,7 @@ AGGR=24;                                  % aggregation period: 24 hour=1 day
 data=load(['Test_data\',name,'.txt']);    % load of input data
 X=cal_SM2RAIN(data,AGGR);                 % SM2RAIN calibration
 FIG=1;                                    % 0 no figure, 1 create the figure
-namefig='CER_SM2R';                       % name of the figure
+namefig=name;                             % name of the figure
 SM2RAIN(data,X,AGGR,FIG,namefig);         % RUN SM2RAIN
 
 %% -----------------------
@@ -19,7 +19,7 @@ AGGR=24;                                      % aggregation period: 24 hour=1 da
 X_ini=[0.1,0.05,0.1,0.1]';                    % initial conditions for the parameter values (dimensionless)
 data=load(['Test_data\',name,'.txt']);        % load of input data
 FIG=0;                                        % 0 no figure, 1 create the figure
-namefig='CER_SM2R_T';                         % name of the figure
+namefig=name;                                 % name of the figure
 X=cal_SM2RAIN_T(data,AGGR,X_ini,FIG,namefig); % SM2RAIN calibration
 FIG=1;                                        % 0 no figure, 1 create the figure
 SM2RAIN_T(data,X,AGGR,FIG,namefig);           % RUN SM2RAIN
@@ -32,7 +32,7 @@ AGGR=24;                                          % aggregation period: 24 hour=
 X_ini=[0.1,0.05,0.1,0.1,.1]';                     % initial conditions for the parameter values (dimensionless)
 data=load(['Test_data\',name,'.txt']);            % load of input data
 FIG=0;                                            % 0 no figure, 1 create the figure
-namefig='CER_SM2R_Tpot2';                         % name of the figure
+namefig=name;                                     % name of the figure
 X=cal_SM2RAIN_Tpot2(data,AGGR,X_ini,FIG,namefig); % SM2RAIN calibration
 FIG=1;                                            % 0 no figure, 1 create the figure
 SM2RAIN_Tpot2(data,X,AGGR,FIG,namefig);           % RUN SM2RAIN
