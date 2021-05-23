@@ -23,4 +23,4 @@ For each code the calibration function is also provided.
 
 In Test_data and Results you can find the dataset for testing the code and the corresponding results.  
 
-ENJOY!
+To run the different version of SM2RAIN you can use the script "RUN_SM2RAIN.m", very easy to use!
