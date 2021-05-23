@@ -123,7 +123,7 @@ if FIG==1
     s=num2str(NN);
     if NN<10,s=['0',num2str(NN)];end
     
-    export_fig([namefig,'_SM2R_',s], '-png','-q60','-r150')
+    export_fig([namefig,'_SM2R_T_',s], '-png','-q60','-r150')
     %     save res
 end
 
